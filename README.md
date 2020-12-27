@@ -2,6 +2,5 @@
 
 ![alt huey](doc/huey_logo.png "Huey")
 
-
-An agile REST API app
-
+A simple project for Docker, Kubernetes, Helm
+and Argo.
