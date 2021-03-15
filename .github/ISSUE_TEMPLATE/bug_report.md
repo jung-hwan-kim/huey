@@ -1,5 +1,5 @@
 ---
-name: Bug report 🐞
+name: ~~Bug report~~ 🐞
 about: Report a bug found in Rubicore.
 title: ''
 labels: 'kind/bug'

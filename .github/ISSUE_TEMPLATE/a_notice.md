@@ -1,13 +1,15 @@
 ---
-name: ~~Question~~ 🤔
-about: Usage question or discussion about Rubicore.
+name: Notice
+about: Our Issue Tracker is moved to https://jira.kxsrd.io/projects/DP/
 title: ''
-labels: 'kind/question'
-assignees: 'adam523'
+labels: 'kind/notice'
+assignees: 'jung-hwan-kim'
 
 ---
 <!--
   To make it easier for us to help you, please include as much useful information as possible.
+
+https://jira.kxsrd.io/projects/DP/
 
   Useful Links;k:
   - Documentation: http://docs.rubikloudcorp.com/rubicore
