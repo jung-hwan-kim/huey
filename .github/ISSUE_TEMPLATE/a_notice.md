@@ -1,5 +1,5 @@
 ---
-name: Notice
+name: :warning: Notice :warning:
 about: Our Issue Tracker is moved to https://jira.kxsrd.io/projects/DP/
 title: ''
 labels: 'kind/notice'
