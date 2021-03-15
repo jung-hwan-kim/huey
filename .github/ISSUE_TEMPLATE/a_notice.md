@@ -1,6 +1,6 @@
 ---
-name: ⚠️ Notice ⚠️
-about: Our Issue Tracker is moved to https://jira.kxsrd.io/projects/DP/
+name: ⚠️ Important Notice ⚠️
+about: Our Issue Tracker has moved to https://jira.kxsrd.io/projects/DP/
 title: ''
 labels: 'kind/notice'
 assignees: 'jung-hwan-kim'
