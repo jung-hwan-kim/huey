@@ -6,17 +6,9 @@ labels: 'kind/notice'
 assignees: 'jung-hwan-kim'
 
 ---
-<!--
-  To make it easier for us to help you, please include as much useful information as possible.
+## Notice
+As of March 11, 2021, we are tracking the Rubicore issues through JIRA.
+Please create issue through https://jira.kxsrd.io/projects/DP/.
+Thank you!
 
-  Useful Link:
-  - Documentation: http://docs.rubikloudcorp.com/rubicore
-
-  Before opening a new issue, please search existing issues.
--->
-
-## Summary
-
-## Relevant information
-
-<!-- Provide as much useful information as you can -->
+Kinaxis Data Platform Team
