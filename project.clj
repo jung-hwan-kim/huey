@@ -1,13 +1,12 @@
 (defproject huey "0.1.0-SNAPSHOT"
   :description "Huey"
   :dependencies [[org.clojure/clojure "1.10.1"]
-                 [compojure "1.6.2"]
-                 [ring/ring-jetty-adapter "1.8.1"]
-                 [ring/ring-json "0.5.0"]
+                 [io.pedestal/pedestal.service "0.5.9"]
+                 [io.pedestal/pedestal.jetty "0.5.9"]
                  [org.clojure/tools.logging "1.1.0"]
                  [clj-http "3.10.3"]]
   :repl-options {:init-ns huey.core}
-  :main ^:skip-aot huey.core
-  :target-path "target/%s"
-  :profiles {:uberjar {:aot :all
-                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
+  :resource-paths ["config", "resources"]
+  :profiles {:dev {:aliases {"run-dev" ["trampoline" "run" "-m" "huey.core/run-dev"]}
+                   :dependencies [[io.pedestal/pedestal.service-tools "0.5.9"]]}}
+  :main ^:skip-aot huey.core)
