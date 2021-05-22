@@ -1,6 +1,6 @@
 (defproject huey "0.1.0-SNAPSHOT"
   :description "Huey"
-  :dependencies [[org.clojure/clojure "1.10.1"]
+  :dependencies [[org.clojure/clojure "1.10.3"]
                  [io.pedestal/pedestal.service "0.5.9"]
                  [io.pedestal/pedestal.jetty "0.5.9"]
                  [org.clojure/tools.logging "1.1.0"]
