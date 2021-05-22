@@ -1,9 +1,6 @@
 (ns huey.core
   (:gen-class) ; for -main method in uberjar
   (:require [io.pedestal.http :as http]
-            [cheshire.core :as json]
-            [clojure.tools.logging :as log]
-            [clj-http.client :as client]
             [huey.service :as service]))
 
 ;; This is an adapted service map, that can be started and stopped

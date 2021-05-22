@@ -2,7 +2,10 @@
   (:require [io.pedestal.http :as http]
             [io.pedestal.http.route :as route]
             [io.pedestal.http.body-params :as body-params]
-            [io.pedestal.http.route.definition :refer [defroutes]]))
+            [clj-http.client :as client]
+            [clojure.tools.logging :as log]
+            [cheshire.core :as json]
+            ))
 
 (defn hello-world
   [request]
