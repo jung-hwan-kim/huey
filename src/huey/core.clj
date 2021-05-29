@@ -1,6 +1,7 @@
 (ns huey.core
   (:gen-class) ; for -main method in uberjar
   (:require [io.pedestal.http :as http]
+            [clj-http.client :as client]
             [huey.service :as service]))
 
 ;; This is an adapted service map, that can be started and stopped
@@ -29,5 +30,5 @@
 (defn -main
   "The entry-point for 'lein run'"
   [& args]
-  (println "\nCreating your server...")
+  (println "\n creating the server...")
   (http/start runnable-service))

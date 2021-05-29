@@ -4,7 +4,7 @@
                  [io.pedestal/pedestal.service "0.5.9"]
                  [io.pedestal/pedestal.jetty "0.5.9"]
                  [org.clojure/tools.logging "1.1.0"]
-                 [clj-http "3.10.3"]]
+                 [clj-http "3.12.2"]]
   :repl-options {:init-ns huey.core}
   :resource-paths ["config", "resources"]
   :profiles {:dev {:aliases {"run-dev" ["trampoline" "run" "-m" "huey.core/run-dev"]}
