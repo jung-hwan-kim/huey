@@ -26,7 +26,8 @@
    :body (json/generate-string {:msg "hello" :status "ok"})}
   )
 
-(json/decode (:body (client/get "http://localhost:8888/abc" {:accept :json})))
+;(json/decode (:body (client/get "http://localhost:8888/abc" {:accept :json})))
+
 
 (defroutes routes
            [[["/"
