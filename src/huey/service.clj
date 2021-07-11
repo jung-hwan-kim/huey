@@ -40,4 +40,4 @@
               ::http/routes        routes
               ::http/resource-path "/public"
               ::http/type          :jetty
-              ::http/port          8888})
+              ::http/port          (new Integer (or (System/getenv "PORT") "8888"))})
