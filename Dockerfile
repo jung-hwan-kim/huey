@@ -1,8 +1,9 @@
 FROM clojure
-LABEL huey.version=1.1
+LABEL huey.project=prototype
 ENV PORT 8080
+ARG APP_DIR=/app
 
-COPY . /app
-WORKDIR /app
+COPY . $APP_DIR
+WORKDIR $APP_DIR
 EXPOSE $PORT
 CMD lein run
