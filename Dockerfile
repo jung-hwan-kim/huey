@@ -5,5 +5,6 @@ ARG APP_DIR=/app
 
 COPY . $APP_DIR
 WORKDIR $APP_DIR
+RUN lein compile
 EXPOSE $PORT
 CMD lein run
