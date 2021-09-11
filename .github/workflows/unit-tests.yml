@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
+        os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
 
@@ -24,11 +24,11 @@ jobs:
           distribution: 'zulu'
           java-version: '8'
 
-      - name: Install clojure tools
+      - name: Install leiningen
         uses: DeLaGuardo/setup-clojure@3.5
         with:
           # Install just one or all simultaneously
           lein: 2.9.1     # or use 'latest' to always provision latest version of leiningen
 
-      - name: Get leiningen version
+      - name: Run unit tests
         run: lein test
