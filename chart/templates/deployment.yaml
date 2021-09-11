@@ -1,4 +1,4 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: huey-app
@@ -13,8 +13,8 @@ spec:
         app: huey
     spec:
       containers:
-      - name: huey-app
-        image: junghwankim/huey:1.0
-        ports:
-        - containerPort: 8080
+        - name: huey-app
+          image: junghwankim/huey:1.0
+          ports:
+            - containerPort: 8080
 
