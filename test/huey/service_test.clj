@@ -4,4 +4,4 @@
 (deftest abc-test
   (testing "abc"
     (let [result (abc {})]
-      (is (= result {:status 200 :body "test\n"})))))
+      (is (= (:status result) 200)))))

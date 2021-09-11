@@ -6,8 +6,29 @@ on:
       - "master"
 
 jobs:
-  unit-tests:
-    runs-on: ubuntu-latest
+  clojure:
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
     steps:
-      - uses: actions/checkout@master
-      - run: make generate_docs
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Prepare java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: '8'
+
+      - name: Install clojure tools
+        uses: DeLaGuardo/setup-clojure@3.5
+        with:
+          # Install just one or all simultaneously
+          lein: 2.9.1     # or use 'latest' to always provision latest version of leiningen
+
+      - name: Get leiningen version
+        run: lein test
