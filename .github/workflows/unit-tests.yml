@@ -25,7 +25,7 @@ jobs:
           java-version: '8'
 
       - name: Install leiningen
-        uses: DeLaGuardo/setup-clojure@3.5
+        uses: DeLaGuardo/setup-clojure@9.5
         with:
           # Install just one or all simultaneously
           lein: 2.9.1     # or use 'latest' to always provision latest version of leiningen
