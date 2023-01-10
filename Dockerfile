@@ -1,10 +1,10 @@
 FROM clojure
 LABEL huey.project=prototype
-ENV PORT 8080
+ENV PORT 40000
 ARG APP_DIR=/app
 
 COPY . $APP_DIR
 WORKDIR $APP_DIR
 RUN lein compile
 EXPOSE $PORT
-CMD lein run
+CMD lein repl :headless :port $PORT
