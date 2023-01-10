@@ -1,9 +1,8 @@
 (defproject huey "0.1.0-SNAPSHOT"
   :description "Huey"
-  :dependencies [[org.clojure/clojure "1.10.3"]
-                 [io.pedestal/pedestal.service "0.5.9"]
-                 [io.pedestal/pedestal.jetty "0.5.9"]
+  :dependencies [[org.clojure/clojure "1.11.1"]
                  [org.clojure/tools.logging "1.1.0"]
+                 [environ "1.2.0"]
                  [clj-http "3.12.2"]]
   :repl-options {:init-ns huey.core}
   :resource-paths ["config", "resources"]
